@@ -45,7 +45,7 @@ export default function Ganesh() {
         <p className="text-xs tracking-[0.35em] text-teal-deep uppercase sm:text-sm">{opening.intro}</p>
       </Reveal>
       {/* Bride First for Bride Side */}
-      <div className="mt-3 flex flex-col items-center">
+      <div className="mt-4 flex flex-col items-center">
         <SplitText
           chars={opening.bride.name.toUpperCase()}
           label={opening.bride.name}
@@ -53,10 +53,10 @@ export default function Ganesh() {
           className="tracking-name text-2xl font-semibold text-crimson sm:text-4xl"
         />
         <Reveal delay={1100}>
-          <p className="mt-0.5 text-xs tracking-wider text-teal-deep uppercase sm:text-sm">{opening.bride.parents}</p>
+          <p className="mt-1.5 text-xs tracking-wider text-teal-deep uppercase sm:text-sm">{opening.bride.parents}</p>
         </Reveal>
         <Reveal delay={1250}>
-          <img src={img('ampersand.webp')} alt="and" className="my-2 w-8 sm:w-12" />
+          <img src={img('ampersand.webp')} alt="and" className="my-2.5 w-8 sm:w-12" />
         </Reveal>
         <SplitText
           chars={[{ ch: 'ય', className: 'font-devanagari font-semibold' }, ...opening.groom.name.slice(1).toUpperCase()]}
@@ -65,7 +65,7 @@ export default function Ganesh() {
           className="tracking-name text-2xl font-semibold text-crimson sm:text-4xl"
         />
         <Reveal delay={2000}>
-          <p className="mt-0.5 text-xs tracking-wider text-teal-deep uppercase sm:text-sm">{opening.groom.parents}</p>
+          <p className="mt-1.5 text-xs tracking-wider text-teal-deep uppercase sm:text-sm">{opening.groom.parents}</p>
         </Reveal>
       </div>
 

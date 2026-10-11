@@ -34,15 +34,15 @@ export default function EventPage({ event }) {
 
         {/* Event Title */}
         <Reveal delay={200} className="mt-2 text-center">
-          <h2 className="max-w-2xl text-2xl font-bold text-(--accent) sm:text-3xl lg:text-4xl">
+          <h2 className="max-w-2xl text-2xl font-bold leading-snug text-(--accent) sm:text-3xl lg:text-4xl">
             {event.title}
           </h2>
-          {event.subtitle && <p className="mt-0.5 text-base text-(--accent-2) italic sm:text-lg">{event.subtitle}</p>}
+          {event.subtitle && <p className="mt-1 text-base text-(--accent-2) italic sm:text-lg">{event.subtitle}</p>}
         </Reveal>
 
         {/* Blessing verse / lines if any */}
         {blessing?.verse && (
-          <Reveal delay={350} lang={blessing.verse.lang} className={`mt-3 ${LANG_FONT[blessing.verse.lang]} text-base font-semibold text-(--accent) sm:text-lg`}>
+          <Reveal delay={350} lang={blessing.verse.lang} className={`mt-3 ${LANG_FONT[blessing.verse.lang]} text-base font-semibold leading-relaxed text-(--accent) sm:text-lg`}>
             {blessing.verse.lines.map((l) => (
               <p key={l}>{l}</p>
             ))}
@@ -123,11 +123,18 @@ export default function EventPage({ event }) {
 
         {/* Description at the end of the page */}
         {event.description && (
-          <Reveal delay={1200} as="footer" className="mt-5 max-w-xl">
-            <Divider className="mb-2 text-(--accent)/50" />
-            <p className="text-xs leading-relaxed italic text-(--page-ink) opacity-90 sm:text-sm">
-              {event.description}
-            </p>
+          <Reveal delay={1200} as="footer" className="relative z-20 mt-6 w-full max-w-xl px-2">
+            <div
+              className={`rounded-lg border border-(--accent)/25 px-4 py-3 text-center shadow-xs sm:px-6 sm:py-3.5 ${
+                theme.night
+                  ? 'bg-ink/80 text-paper/95 backdrop-blur-md'
+                  : 'bg-paper/90 text-(--page-ink) backdrop-blur-xs'
+              }`}
+            >
+              <p className="text-xs leading-relaxed italic opacity-95 sm:text-sm">
+                {event.description}
+              </p>
+            </div>
           </Reveal>
         )}
       </div>

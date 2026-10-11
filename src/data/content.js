@@ -16,8 +16,8 @@ export const mantra = {
 // MAIN PAGE 1: GANESH
 export const opening = {
   shloka: [
-    'વક્રતુંડ મહાકાય સૂર્યકોટિ સમપ્રભઃ ।',
-    'નિર્વિઘ્નં કુરુ મે દેવ શુભકાર્યેષુ સર્વદા ॥',
+    'વક્રતુંડ મહાકાય સૂર્યકોટી સમપ્રભ ।',
+    'નિર્વિઘ્નં કુરુ મે દેવ સર્વકાર્યેષુ સર્વદા ॥',
   ],
   intro: 'Wedding invitation of',
   bride: { name: 'Prarthana', parents: '(Daughter of Hema and Bhrugesh Bhatt)' },
@@ -29,9 +29,43 @@ export const description = {
   title: 'Saptabandhan',
   subtitle: 'Our Wedding Journey in Seven Sacred Chapters',
   paragraphs: [
-    "Our wedding journey unfolds in seven sacred chapters beginning with the decision to celebrate our lotus-like souls' union with all of you in the Kankotri-lekhan. The groom and his family then introduced the bride to their customs and bound the souls in a “sacred wedding knot” during the Chundadi Function followed by the fragrant, love-filled waves of the Mehndi celebration to both families.",
-    'We then sought auspicious planetary blessings to direct us through life, like the North Star with the auspicious Grah Shanti before we go back to our roots, where all near and dear ones bless us Infinity with health and prosperity through the customary healthy Haldi.',
-    'In the penultimate stage, all of us gather under the stars to dance and celebrate to the moon and back in Sangeet Night leading finally to the ultimate Vivah, where Agnidev witnesses and blesses our eternal union.',
+    [
+      { text: "Our wedding journey unfolds in seven sacred chapters beginning with the decision to celebrate our " },
+      { text: "Lotus", type: "element" },
+      { text: "-like souls' union with all of you in the " },
+      { text: "Kankotri Lekhan", type: "function" },
+      { text: ". The groom and his family then introduced the bride to their customs and bound the souls in a " },
+      { text: "“Sacred Wedding Knot”", type: "element" },
+      { text: " during the " },
+      { text: "Chundadi Function", type: "function" },
+      { text: " followed by the fragrant, love-filled " },
+      { text: "Waves", type: "element" },
+      { text: " of the " },
+      { text: "Mehndi Celebration", type: "function" },
+      { text: " to both families." },
+    ],
+    [
+      { text: "We then sought auspicious planetary blessings to direct us through life, like the " },
+      { text: "North Star", type: "element" },
+      { text: " with the auspicious " },
+      { text: "Grah Shanti", type: "function" },
+      { text: " before we go back to our roots, where all near and dear ones bless us " },
+      { text: "Infinity", type: "element" },
+      { text: " with health and prosperity through the customary healthy " },
+      { text: "Haldi", type: "function" },
+      { text: "." },
+    ],
+    [
+      { text: "In the penultimate stage, all of us gather under the stars to dance and celebrate to the " },
+      { text: "Moon and back", type: "element" },
+      { text: " in " },
+      { text: "Sangeet Night", type: "function" },
+      { text: " leading finally to the ultimate " },
+      { text: "Vivah", type: "function" },
+      { text: ", where " },
+      { text: "Agnidev (Agni)", type: "element" },
+      { text: " witnesses and blesses our eternal union." },
+    ],
   ],
 }
 
@@ -47,11 +81,11 @@ export const sequenceOfElements = [
 ]
 
 const BANSIDHAR_APT = [
-  'A-19/20 Bansidhar Apartment, Opp.Mitramilan Soc.,',
-  'Nr.Mirambika School,Naranpura, Ahmedabad 380013',
+  'A-19/20 Bansidhar Apartment, Opp. Mitramilan Soc.,',
+  'Nr. Mirambika School, Naranpura, Ahmedabad 380013',
 ]
 const KAMLA_AMRUT = ['Kamla Amrut Farm']
-const KALYAN_PUSHTI = ['Kalyan Pushti Haveli, Vastrapur', 'Ahmedabad,Gujarat']
+const KALYAN_PUSHTI = ['Kalyan Pushti Haveli, Vastrapur', 'Ahmedabad, Gujarat']
 
 export const events = [
   {
@@ -162,7 +196,7 @@ export const events = [
       ],
     },
     date: 'Tuesday, 24th November 2026',
-    dateNote: 'Shukla Purnima,Vikram Samvant 2083',
+    dateNote: 'Shukla Purnima, Vikram Samvant 2083',
     schedule: [
       { label: 'Hastmelap', time: '6:35 PM', note: '(followed by DINNER)' },
     ],
