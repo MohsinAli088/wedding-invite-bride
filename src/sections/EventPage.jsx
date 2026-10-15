@@ -6,6 +6,25 @@ import { mapsLink } from '../data/content'
 
 const LANG_FONT = { sa: 'font-devanagari', hi: 'font-devanagari' }
 
+function formatSuperscriptDate(dateStr) {
+  if (!dateStr) return null
+  const parts = dateStr.split(/(\d+(?:st|nd|rd|th|ST|ND|RD|TH))/i)
+  return parts.map((part, i) => {
+    const match = part.match(/^(\d+)(st|nd|rd|th|ST|ND|RD|TH)$/i)
+    if (match) {
+      return (
+        <span key={i} className="inline-block">
+          {match[1]}
+          <sup className="text-[0.62em] font-bold uppercase relative -top-[0.5em] tracking-normal">
+            {match[2]}
+          </sup>
+        </span>
+      )
+    }
+    return part
+  })
+}
+
 function HighlightedDescription({ text, night }) {
   if (!text) return null
   const parts = text.split(/(“[^”]+”|"[^"]+")/g)
@@ -92,8 +111,8 @@ export default function EventPage({ event }) {
 
         <Reveal delay={600} className="mt-4">
           <Divider className="text-(--accent)" />
-          <p className="mt-3 text-base font-semibold tracking-[0.15em] text-(--accent) uppercase sm:text-lg">{event.date}</p>
-          {event.dateNote && <p className="mt-0.5 text-xs tracking-[0.18em] text-(--accent-2) uppercase sm:text-sm">{event.dateNote}</p>}
+          <p className="mt-3 text-base font-semibold tracking-[0.15em] text-(--accent) uppercase sm:text-lg">{formatSuperscriptDate(event.date)}</p>
+          {event.dateNote && <p className="mt-0.5 text-xs tracking-[0.18em] text-(--accent-2) uppercase sm:text-sm">{formatSuperscriptDate(event.dateNote)}</p>}
         </Reveal>
 
         {/* Timings */}
