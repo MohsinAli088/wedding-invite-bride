@@ -208,7 +208,7 @@ export const events = [
 
 // PAGE: FAMILY (Bhatt Family)
 export const family = {
-  title: 'A cordial invitation from',
+  title: '|| A cordial invitation from ||',
   groups: [
     {
       members: [
