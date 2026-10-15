@@ -136,7 +136,7 @@ export const events = [
     schedule: [
       { label: 'Ganesh Sthapana', time: '8:05 AM' },
       { label: 'Mandap Muhurat', time: '8:25 AM' },
-      { label: 'Grah Shanti Yagya', time: '9:15 AM', note: '(followed by Lunch)' },
+      { label: 'Grah Shanti Yagna', time: '9:15 AM', note: '(followed by Lunch)' },
     ],
     dressCode: { label: 'Yellow/Red/Gharchola', colors: ['#f2c230', '#c0272d'] },
     venue: BANSIDHAR_APT,
