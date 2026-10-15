@@ -30,7 +30,7 @@ export default function Ganesh() {
       </Reveal>
 
       {/* Main page 1 invocations */}
-      <Reveal delay={200} lang="gu" className="mt-4 font-gujarati text-base leading-relaxed font-semibold text-rust sm:text-xl">
+      <Reveal delay={200} lang="sa" className="mt-4 font-devanagari text-base leading-relaxed font-semibold text-rust sm:text-xl">
         {opening.shloka.map((l) => (
           <p key={l}>{l}</p>
         ))}

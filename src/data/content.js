@@ -9,15 +9,15 @@ export const couple = {
 
 export const mantra = {
   shri: 'શ્રી',
-  ganesh: 'શ્રી ગણેશાય નમઃ',
+  ganesh: '॥ શ્રી ગણેશાય નમઃ ॥',
   lalitambika: 'શ્રી લલિતામ્બિકાય નમઃ',
 }
 
 // MAIN PAGE 1: GANESH
 export const opening = {
   shloka: [
-    'વક્રતુંડ મહાકાય સૂર્યકોટી સમપ્રભ ।',
-    'નિર્વિઘ્નં કુરુ મે દેવ સર્વકાર્યેષુ સર્વદા ॥',
+    'वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ ।',
+    'निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा ॥',
   ],
   intro: 'Wedding invitation of',
   bride: { name: 'Prarthana', parents: '(Daughter of Hema and Bhrugesh Bhatt)' },
