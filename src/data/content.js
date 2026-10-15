@@ -10,7 +10,7 @@ export const couple = {
 export const mantra = {
   shri: 'શ્રી',
   ganesh: '॥ શ્રી ગણેશાય નમઃ ॥',
-  lalitambika: 'શ્રી લલિતામ્બિકાય નમઃ',
+  lalitambika: '॥ શ્રી લલિતામ્બિકાય નમઃ ॥',
 }
 
 // MAIN PAGE 1: GANESH
