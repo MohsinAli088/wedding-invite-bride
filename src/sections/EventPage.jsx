@@ -52,7 +52,7 @@ function HighlightedDescription({ text, night }) {
 export default function EventPage({ event }) {
   const theme = THEMES[event.theme]
   const { blessing } = event
-  const cornerMantra = event.invocation?.text || '॥ શ્રી લલિતામ્બિકાય નમઃ ॥'
+  const cornerMantra = event.invocation?.text || '॥ શ્રી લલિતામ્બિકાયૈ નમઃ ॥'
 
   return (
     <Card

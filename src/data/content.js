@@ -10,7 +10,7 @@ export const couple = {
 export const mantra = {
   shri: 'શ્રી',
   ganesh: '॥ શ્રી ગણેશાય નમઃ ॥',
-  lalitambika: '॥ શ્રી લલિતામ્બિકાય નમઃ ॥',
+  lalitambika: '॥ શ્રી લલિતામ્બિકાયૈ નમઃ ॥',
 }
 
 // MAIN PAGE 1: GANESH
@@ -93,7 +93,7 @@ export const events = [
     title: 'Chundadi – The Royal Life',
     theme: 'rajputana',
     element: 'knot',
-    invocation: { lang: 'gu', text: '॥ શ્રી લલિતામ્બિકાય નમઃ ॥' },
+    invocation: { lang: 'gu', text: '॥ શ્રી લલિતામ્બિકાયૈ નમઃ ॥' },
     date: 'Friday, 20th November 2026',
     schedule: [{ label: 'Timing', time: '5:30 PM onwards', note: '(followed by Dinner)' }],
     dressCode: { label: 'Green', colors: ['#2f7d4a'] },
@@ -106,7 +106,7 @@ export const events = [
     title: 'Mehandi – The garden of Love',
     theme: 'mughal',
     element: 'waves',
-    invocation: { lang: 'gu', text: '॥ શ્રી લલિતામ્બિકાય નમઃ ॥' },
+    invocation: { lang: 'gu', text: '॥ શ્રી લલિતામ્બિકાયૈ નમઃ ॥' },
     blessing: {
       lines: [
         'As the colours of Mehandi bring joy, tradition and celebration to this beautiful occasion,',
@@ -125,7 +125,7 @@ export const events = [
     title: 'Grah Shanti – The sacred blessings of all planetary Gods',
     theme: 'temple',
     element: 'north-star',
-    invocation: { lang: 'gu', text: '॥ શ્રી લલિતામ્બિકાય નમઃ ॥' },
+    invocation: { lang: 'gu', text: '॥ શ્રી લલિતામ્બિકાયૈ નમઃ ॥' },
     blessing: {
       lines: [
         'As sacred mantras echo through the home and blessings fill every corner,',
@@ -148,7 +148,7 @@ export const events = [
     title: 'Haldi – The roots of love',
     theme: 'village',
     element: 'infinity',
-    invocation: { lang: 'gu', text: '॥ શ્રી લલિતામ્બિકાય નમઃ ॥' },
+    invocation: { lang: 'gu', text: '॥ શ્રી લલિતામ્બિકાયૈ નમઃ ॥' },
     blessing: {
       lines: [
         'Amidst rustic charm, vibrant colours, and the joy of a village carnival,',
@@ -167,7 +167,7 @@ export const events = [
     title: 'Sangeet – Walking to the moon',
     theme: 'golden',
     element: 'sun-moon',
-    invocation: { lang: 'gu', text: '॥ શ્રી લલિતામ્બિકાય નમઃ ॥' },
+    invocation: { lang: 'gu', text: '॥ શ્રી લલિતામ્બિકાયૈ નમઃ ॥' },
     blessing: {
       lines: [
         'Where galaxies glow beneath a moonlit sky,',
@@ -186,7 +186,7 @@ export const events = [
     title: 'Wedding – Eternity',
     theme: 'eternity',
     element: 'agni',
-    invocation: { lang: 'gu', text: '॥ શ્રી લલિતામ્બિકાય નમઃ ॥' },
+    invocation: { lang: 'gu', text: '॥ શ્રી લલિતામ્બિકાયૈ નમઃ ॥' },
     blessing: {
       verse: { lang: 'hi', lines: ['जेहि कें जेहि पर सत्य सनेहू।', 'सो तेहि मिलइ न कछु संदेहू॥'] },
       lines: [

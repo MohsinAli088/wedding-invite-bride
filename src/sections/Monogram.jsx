@@ -23,7 +23,7 @@ function Logo() {
 
 export default function Monogram() {
   return (
-    <Card id="monogram" label="Prarthana and Yatin" cornerMantra="॥ શ્રી લલિતામ્બિકાય નમઃ ॥">
+    <Card id="monogram" label="Prarthana and Yatin" cornerMantra="॥ શ્રી લલિતામ્બિકાયૈ નમઃ ॥">
       <Logo />
       <h1 className="mt-6 flex flex-col items-center leading-tight">
         <SplitText

@@ -6,7 +6,7 @@ import { description, sequenceOfElements } from '../data/content'
 
 export default function Description() {
   return (
-    <Card id="saptabandhan" label={description.title} cornerMantra="॥ શ્રી લલિતામ્બિકાય નમઃ ॥">
+    <Card id="saptabandhan" label={description.title} cornerMantra="॥ શ્રી લલિતામ્બિકાયૈ નમઃ ॥">
       <h2 className="text-2xl font-semibold text-crimson uppercase sm:text-4xl lg:text-5xl">
         <SplitText chars={description.title} step={80} className="tracking-[0.14em] sm:tracking-[0.2em]" />
       </h2>
