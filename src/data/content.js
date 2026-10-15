@@ -191,7 +191,7 @@ export const events = [
       verse: { lang: 'hi', lines: ['जेहि कें जेहि पर सत्य सनेहू।', 'सो तेहि मिलइ न कछु संदेहू॥'] },
       lines: [
         'With mantras in the air, blessings in our hearts, and the grace of the divine,',
-        'we invite you to witness the sacred union of two hearts and two families.',
+        'We invite you to witness the sacred union of two hearts and two families.',
       ],
     },
     date: 'Tuesday, 24th November 2026',
