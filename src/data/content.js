@@ -197,7 +197,7 @@ export const events = [
     date: 'Tuesday, 24th November 2026',
     dateNote: 'Shukla Purnima, Vikram Samvant 2083',
     schedule: [
-      { label: 'Hastmelap', time: '7:35 PM', note: '(followed by DINNER)' },
+      { label: 'Hastmelap', time: '7:30 PM', note: '(followed by DINNER)' },
     ],
     dressCode: { label: 'Indian Traditional', colors: [] },
     venue: KAMLA_AMRUT,
