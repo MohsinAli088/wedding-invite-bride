@@ -182,7 +182,6 @@ export default function ThemeDecor({ theme }) {
     case 'rajputana':
       return (
         <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
-          <Arch className="decor-draw absolute top-[3%] left-1/2 w-[92%] max-w-[620px] -translate-x-1/2 text-[#b07a1f] opacity-30" />
           {PETALS.map((p, i) => (
             <span
               key={i}

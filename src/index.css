@@ -53,6 +53,19 @@
     background-clip: padding-box;
   }
 
+  /* Date ordinal suffix superscript (th, rd, st, nd) */
+  .date-sup {
+    font-size: 0.55em;
+    line-height: 0;
+    vertical-align: super;
+    position: relative;
+    top: -0.35em;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin-left: 1px;
+    font-weight: 700;
+  }
+
   /* ---------- theme elements (paused until their page is in view) ---------- */
   .decor-flame,
   .decor-glow,

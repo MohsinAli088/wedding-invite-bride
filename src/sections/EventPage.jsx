@@ -15,9 +15,7 @@ function formatSuperscriptDate(dateStr) {
       return (
         <span key={i} className="inline-block">
           {match[1]}
-          <sup className="text-[0.62em] font-bold uppercase relative -top-[0.5em] tracking-normal">
-            {match[2]}
-          </sup>
+          <sup className="date-sup">{match[2]}</sup>
         </span>
       )
     }

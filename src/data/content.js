@@ -94,8 +94,8 @@ export const events = [
     theme: 'rajputana',
     element: 'knot',
     invocation: { lang: 'gu', text: '॥ શ્રી લલિતામ્બિકાય નમઃ ॥' },
-    date: 'Saturday, 20th November 2026',
-    schedule: [{ label: 'Timing', time: '6:00 PM onwards', note: '(followed by Dinner)' }],
+    date: 'Friday, 20th November 2026',
+    schedule: [{ label: 'Timing', time: '5:30 PM onwards', note: '(followed by Dinner)' }],
     dressCode: { label: 'Green', colors: ['#2f7d4a'] },
     venue: KALYAN_PUSHTI,
     description:
