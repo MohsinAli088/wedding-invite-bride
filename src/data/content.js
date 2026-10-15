@@ -212,20 +212,20 @@ export const family = {
   groups: [
     {
       members: [
+        'Heavenly abode Mrs. Sharmishtaben Prasannakumar Bhatt',
+        'Heavenly abode Mr. Prasannakumar Veniram Bhatt',
+      ],
+    },
+    {
+      members: [
         'Heavenly abode Mrs. Hema Bhrugesh Bhatt',
         'Mr. Bhrugesh Prasannakumar Bhatt',
       ],
     },
     {
       members: [
-        'Late Mr. Prasannakumar Veniram Bhatt',
-        'Late Mrs. Sharmishtaben Prasannakumar Bhatt',
-      ],
-    },
-    {
-      members: [
-        'Mr. Gaurav Janakkumar Bhatt',
         'Mrs. Stuti Gaurav Bhatt',
+        'Mr. Gaurav Janakkumar Bhatt',
         'Ms. Parthi Gaurav Bhatt',
       ],
     },
