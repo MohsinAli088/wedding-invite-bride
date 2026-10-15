@@ -9,6 +9,37 @@ const INK = [
   { src: img('ink-1.webp'), className: 'left-[10%] bottom-[-15%] w-[90%] sm:w-[55%] rotate-90', delay: 240 },
 ]
 
+const AMBIENT_PETALS = Array.from({ length: 12 }, (_, i) => {
+  const r = (k) => {
+    const x = Math.sin((i + 1) * 12.9898 + 42 * 78.233 + k * 37.719) * 43758.5453
+    return x - Math.floor(x)
+  }
+  return { x: r(1), y: r(2), s: r(3), d: r(4) }
+})
+
+function DefaultDecor() {
+  return (
+    <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+      {AMBIENT_PETALS.map((p, i) => (
+        <span
+          key={i}
+          className="decor-petal absolute block rounded-[60%_0_60%_0] bg-[#e69123]/70"
+          style={{
+            left: `${p.x * 100}%`,
+            top: '-5%',
+            width: `${10 + p.s * 10}px`,
+            height: `${10 + p.s * 10}px`,
+            opacity: 0.75,
+            animationDuration: `${9 + p.d * 7}s`,
+            animationDelay: `${p.y * 8}s`,
+            '--drift': `${(p.x - 0.5) * 160}px`,
+          }}
+        />
+      ))}
+    </div>
+  )
+}
+
 // One "page" of the invitation: paper, block-print frame, hanging garland
 // top-left and the peacock bottom-left, as in the PDF.
 export default function Card({ id, label, children, peacock = true, className = '', theme, decor, cornerMantra }) {
@@ -35,7 +66,7 @@ export default function Card({ id, label, children, peacock = true, className = 
             {cornerMantra}
           </div>
         )}
-        {decor && <div className="absolute inset-0 z-[5]">{decor}</div>}
+        <div className="absolute inset-0 z-[5]">{decor || <DefaultDecor />}</div>
         <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-30 overflow-hidden">
           {INK.map((ink, i) => (
             <img

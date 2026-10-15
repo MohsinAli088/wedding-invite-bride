@@ -1,5 +1,5 @@
 // Wording for Bride Side (Bhatt Family) as per brideside.md
-export const music = { src: 'audio/preet-re.mp3', title: 'Preet Re', volume: 0.6 }
+export const music = { src: 'audio/sajna.mp3', title: 'Sajna', volume: 0.6 }
 
 export const couple = {
   bride: 'Prarthana',
@@ -41,7 +41,7 @@ export const description = {
       { text: " followed by the fragrant, love-filled " },
       { text: "Waves", type: "element" },
       { text: " of the " },
-      { text: "Mehndi Celebration", type: "function" },
+      { text: "Mehandi Celebration", type: "function" },
       { text: " to both families." },
     ],
     [
@@ -103,13 +103,13 @@ export const events = [
   },
   {
     id: 'mehndi',
-    title: 'The Mehandi Mela',
+    title: 'Mehandi – The garden of Love',
     theme: 'mughal',
     element: 'waves',
     invocation: { lang: 'gu', text: '॥ શ્રી લલિતામ્બિકાય નમઃ ॥' },
     blessing: {
       lines: [
-        'As the colours of Mehendi bring joy, tradition and celebration to this beautiful occasion,',
+        'As the colours of Mehandi bring joy, tradition and celebration to this beautiful occasion,',
         'may we gather to bless the bride with love, laughter and cherished memories.',
       ],
     },
@@ -118,7 +118,7 @@ export const events = [
     dressCode: { label: 'Pink', colors: ['#e58fb0'] },
     venue: BANSIDHAR_APT,
     description:
-      'The love story unfolds as henna adorns and beautifies the bride and all the magnificent guests who come in waves to bless the bride and groom.',
+      'The love story unfolds as henna adorns and beautifies the bride and all the magnificent guests who come in “waves” to bless the bride and groom.',
   },
   {
     id: 'grah-shanti',
@@ -134,19 +134,18 @@ export const events = [
     },
     date: 'Sunday, 22nd November 2026',
     schedule: [
-      { label: 'Ganesh Stapana', time: '8:05 AM' },
-      { label: 'Mandap Stapna', time: '8:25 AM' },
+      { label: 'Ganesh Sthapana', time: '8:05 AM' },
+      { label: 'Mandap Muhurat', time: '8:25 AM' },
       { label: 'Grah Shanti Yagya', time: '9:15 AM', note: '(followed by Lunch)' },
     ],
-    dressCode: { label: 'Yellow/Red/Grahcola', colors: ['#f2c230', '#c0272d'] },
+    dressCode: { label: 'Yellow/Red/Gharchola', colors: ['#f2c230', '#c0272d'] },
     venue: BANSIDHAR_APT,
     description:
       'The couple seeks blessings of all the celestial bodies and protection and guidance in life, just as sailors seek direction from the “North Star”.',
   },
   {
     id: 'haldi',
-    title: 'Haldi',
-    subtitle: 'Of Prarthana & Yatin',
+    title: 'Haldi – The roots of love',
     theme: 'village',
     element: 'infinity',
     invocation: { lang: 'gu', text: '॥ શ્રી લલિતામ્બિકાય નમઃ ॥' },
@@ -213,8 +212,8 @@ export const family = {
   groups: [
     {
       members: [
-        'Heavenly abode Mrs. Hema Bhrugeshbhai Bhatt',
-        'Mr. Bhrugeshbhai Prasannakumar Bhatt',
+        'Heavenly abode Mrs. Hema Bhrugesh Bhatt',
+        'Mr. Bhrugesh Prasannakumar Bhatt',
       ],
     },
     {

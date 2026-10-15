@@ -6,6 +6,32 @@ import { mapsLink } from '../data/content'
 
 const LANG_FONT = { sa: 'font-devanagari', hi: 'font-devanagari' }
 
+function HighlightedDescription({ text, night }) {
+  if (!text) return null
+  const parts = text.split(/(“[^”]+”|"[^"]+")/g)
+  return (
+    <p className="text-xs leading-relaxed italic opacity-95 sm:text-sm">
+      {parts.map((part, i) => {
+        if (/^[“"][^”"]+[”"]$/.test(part)) {
+          return (
+            <span
+              key={i}
+              className={`font-bold not-italic px-1 py-0.5 rounded ${
+                night
+                  ? 'text-amber-300 bg-amber-400/15'
+                  : 'text-crimson bg-crimson/10'
+              }`}
+            >
+              {part}
+            </span>
+          )
+        }
+        return part
+      })}
+    </p>
+  )
+}
+
 export default function EventPage({ event }) {
   const theme = THEMES[event.theme]
   const { blessing } = event
@@ -27,7 +53,7 @@ export default function EventPage({ event }) {
             <span className="animate-spin-slow absolute inset-1 rounded-full border border-dashed border-(--accent-2)/40" />
             <Icon
               name={event.element}
-              className={`size-8 sm:size-9 ${theme.night ? 'brightness-0 invert sepia-[.6] saturate-[2.5]' : ''}`}
+              className={`size-8 sm:size-9 ${theme.night ? 'brightness-0 invert sepia-[.6] saturate-[2.5]' : 'contrast-125 brightness-90'} drop-shadow-xs`}
             />
           </span>
         </Reveal>
@@ -131,9 +157,7 @@ export default function EventPage({ event }) {
                   : 'bg-paper/90 text-(--page-ink) backdrop-blur-xs'
               }`}
             >
-              <p className="text-xs leading-relaxed italic opacity-95 sm:text-sm">
-                {event.description}
-              </p>
+              <HighlightedDescription text={event.description} night={theme.night} />
             </div>
           </Reveal>
         )}

@@ -19,7 +19,7 @@ export default function Ganesh() {
               src={img('ganesh.png')}
               alt="Shri Ganesh"
               onError={() => setHasPhoto(false)}
-              className="size-[86%] rounded-full object-cover"
+              className="size-[86%] object-contain"
             />
           ) : (
             <span lang="gu" className="font-gujarati text-7xl font-bold text-rust sm:text-8xl">

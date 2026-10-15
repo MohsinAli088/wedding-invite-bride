@@ -183,6 +183,22 @@ export default function ThemeDecor({ theme }) {
       return (
         <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
           <Arch className="decor-draw absolute top-[3%] left-1/2 w-[92%] max-w-[620px] -translate-x-1/2 text-[#b07a1f] opacity-30" />
+          {PETALS.map((p, i) => (
+            <span
+              key={i}
+              className="decor-petal absolute block rounded-[60%_0_60%_0] bg-[#a82435]"
+              style={{
+                left: `${p.x * 100}%`,
+                top: '-5%',
+                width: `${10 + p.s * 10}px`,
+                height: `${10 + p.s * 10}px`,
+                opacity: 0.75,
+                animationDuration: `${9 + p.d * 7}s`,
+                animationDelay: `${p.y * 8}s`,
+                '--drift': `${(p.x - 0.5) * 160}px`,
+              }}
+            />
+          ))}
           <div className="absolute right-[4%] bottom-[3%] flex items-end gap-2 sm:right-[6%]">
             <Diya className="w-10 sm:w-14" />
             <Diya className="w-12 sm:w-16" delay={300} />
@@ -216,7 +232,22 @@ export default function ThemeDecor({ theme }) {
     case 'temple':
       return (
         <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
-          <Temple className="absolute top-[3%] left-1/2 w-40 -translate-x-1/2 text-[#a86d08] opacity-20 sm:w-56" />
+          {PETALS.map((p, i) => (
+            <span
+              key={i}
+              className="decor-petal absolute block rounded-[60%_0_60%_0] bg-[#e69123]"
+              style={{
+                left: `${p.x * 100}%`,
+                top: '-5%',
+                width: `${10 + p.s * 10}px`,
+                height: `${10 + p.s * 10}px`,
+                opacity: 0.75,
+                animationDuration: `${9 + p.d * 7}s`,
+                animationDelay: `${p.y * 8}s`,
+                '--drift': `${(p.x - 0.5) * 160}px`,
+              }}
+            />
+          ))}
           <div className="absolute top-0 right-[8%] flex gap-4 sm:right-[10%] sm:gap-8">
             <Bell className="w-6 sm:w-8" length={50} />
             <Bell className="w-8 sm:w-10" length={90} delay={400} />
@@ -231,6 +262,22 @@ export default function ThemeDecor({ theme }) {
       return (
         <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
           <Bunting className="absolute top-0 right-0 h-12 w-[70%] sm:h-16" />
+          {PETALS.map((p, i) => (
+            <span
+              key={i}
+              className="decor-petal absolute block rounded-[60%_0_60%_0] bg-[#f59e0b]"
+              style={{
+                left: `${p.x * 100}%`,
+                top: '-5%',
+                width: `${10 + p.s * 10}px`,
+                height: `${10 + p.s * 10}px`,
+                opacity: 0.8,
+                animationDuration: `${9 + p.d * 7}s`,
+                animationDelay: `${p.y * 8}s`,
+                '--drift': `${(p.x - 0.5) * 160}px`,
+              }}
+            />
+          ))}
           <FerrisWheel className="absolute right-[3%] bottom-[2%] h-32 w-28 opacity-70 sm:h-48 sm:w-44" />
         </div>
       )
@@ -248,6 +295,22 @@ export default function ThemeDecor({ theme }) {
                 height: `${1 + s.s * 2.5}px`,
                 animationDelay: `${s.d * 4}s`,
                 animationDuration: `${2.5 + s.s * 3}s`,
+              }}
+            />
+          ))}
+          {PETALS.map((p, i) => (
+            <span
+              key={`star-fall-${i}`}
+              className="decor-petal absolute block rotate-45 bg-[#fef08a] shadow-[0_0_8px_2px_rgba(255,236,170,0.4)]"
+              style={{
+                left: `${p.x * 100}%`,
+                top: '-5%',
+                width: `${4 + p.s * 5}px`,
+                height: `${4 + p.s * 5}px`,
+                opacity: 0.85,
+                animationDuration: `${8 + p.d * 6}s`,
+                animationDelay: `${p.y * 6}s`,
+                '--drift': `${(p.x - 0.5) * 140}px`,
               }}
             />
           ))}
