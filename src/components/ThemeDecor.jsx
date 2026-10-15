@@ -208,7 +208,6 @@ export default function ThemeDecor({ theme }) {
     case 'mughal':
       return (
         <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
-          <Arch className="decor-draw absolute top-[3%] left-1/2 w-[92%] max-w-[620px] -translate-x-1/2 text-[#a8325f] opacity-25" />
           {PETALS.map((p, i) => (
             <span
               key={i}
